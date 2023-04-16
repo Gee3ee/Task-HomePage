@@ -1,0 +1,10 @@
+Hello. This text file will serve to explain a bit on the UX and optemization for the task home page.
+
+On the side of user experience, the page is both mobile and computer friendly. Spacing, both imgage and text sizes, and colors were used to match the theme of the fake brand but also to 
+be easy on a persons vision. Additionally for that reason, some text sizes will be slightly bigger in case a user with poor vision visits the site. Information, buttons, and links are
+brief but are useful enough to not overwhelm a person with too much information. If something is of interest to the person, the person would ideally click on the information if the site
+was fully functional.
+
+On the side of optemization, images have been scaled down in order to neatly fit the page and they have also been compressed data-wise in order to load the page faster. Optemization is 
+also acquired due to the page being mobile friendly, which is useful for SEO (Search Engine Optemization) algorithms that are used by search engines such as Google, Bing, Duck Duck Go, etc.
+Lazy loading has also been implemented on images below the slideshow because a person could technically use one of the links on the header, which renders anything below the slideshow unused and can lead to time lost IF lazy loading were not implemented. There shouldn't be any unused tags, classes or id's present, which is also helpful for optemization. 

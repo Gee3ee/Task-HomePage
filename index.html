@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/shine-homepage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbarScroll navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-diamond fa-2x" id="logo-color" aria-hidden="true"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" title="Shopping Cart" href="#!">
+                            <i class="fa fa-solid fa-shopping-basket"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Our Locations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Log In
+                        </a>
+                        <div class="dropdown-menu">
+                            <form class="px-4 py-3">
+                                <label id="login-title-text">Log Into Your Account</label>
+                                <div class="dropdown-divider"></div>
+                                <div class="form-group">
+                                    <label>Email Address</label>
+                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleDropdownFormPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">Remember Me</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </form>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Forgot Your Password?</a>
+                            <a class="dropdown-item" href="#">Sign Up</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Main Cotent-->
+    <!--Slideshow-->
+    <div class="slideshow-container mt-5 mb-5 pl-3 pr-3">
+        <div class="mySlides fade">
+            <img src="./images/My project-min.jpg" class="slideshow-image-size" alt="">
+            <div class="card text-center card-text-style">
+                <div class="card-body">Look Stylish At Work</div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img src="./images/My project(1)-min.jpg" class="slideshow-image-size" alt="">
+            <div class="card text-center card-text-style">
+                <div class="card-body">Shoes For All Types Of Looks</div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img src="./images/My project(2)-min.jpg" class="slideshow-image-size" alt="">
+            <div class="card text-center card-text-style">
+                <div class="card-body">Discover What Is In Style For This Spring</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!--Featured Collections-->
+    <h4 class="mb-4 mt-3">Featured Collections</h4>
+    <div class="card-group mt-4 mb-5 pl-5 pr-5">
+        <div class="card">
+            <img class="card-img-top" src="./images/My project(6)-min.jpg" alt="" loading="lazy">
+            <div class="card-body text-center">
+                <h5 class="card-title text-center">Shirts</h5>
+                <button type="button" class="btn btn-info">Shop</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="./images/My project(3)-min.jpg" alt="" loading="lazy">
+            <div class="card-body text-center">
+                <h5 class="card-title text-center">Jeans</h5>
+                <button type="button" class="btn btn-info">Shop</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="./images/61MvIfaAn-L._AC_SR1840,1472_-min.jpg" alt="" loading="lazy">
+            <div class="card-body text-center">
+                <h5 class="card-title text-center">Shoes</h5>
+                <button type="button" class="btn btn-info">Shop</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="./images/My project(4)-min.jpg" alt="" loading="lazy">
+            <div class="card-body text-center">
+                <h5 class="card-title text-center">Accessories</h5>
+                <button type="button" class="btn btn-info">Shop</button>
+            </div>
+        </div>
+    </div>
+    <!--Featured Offer-->
+    <div class="container">
+        <div class="jumbotron" id="jumbotron-outer">
+            <div class="text-center pt-3" id="jumbotron-inner">
+                <h3>Free Shipping On Orders Over $50</h3>
+                <p>International Shipping Fees May Apply</p>
+            </div> 
+        </div>
+    </div>
+    <!--Popular Products-->
+    <h4 class="mb-4 mt-3">Popular Products</h4>
+    <div class="card-group mt-4 mb-5 pl-5 pr-5">
+        <div class="card border-primary">
+            <a href="#!">
+                <img class="card-img-top" src="./images/belt-min.jpeg" alt="" loading="lazy">
+            </a>
+            <div class="card-body text-center">
+                <h5 class="card-title text-center">Brand A Women's Belt</h5>
+            </div>
+            <div class="text-center">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="mt-2 mb-4">
+                    <span>21 ratings & 10 reviews</span>
+                </div>
+            </div>
+        </div>
+        <div class="card border-primary">
+            <a href="#!">
+                <img class="card-img-top" src="./images/shades-min.jpg" alt="" loading="lazy">
+            </a>
+            <div class="card-body text-center">
+                <h5 class="card-title text-center">Brand B Shades</h5>
+            </div>
+            <div class="text-center">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="mt-2 mb-4">
+                    <span>30 ratings & 15 reviews</span>
+                </div>
+            </div>
+        </div>
+        <div class="card border-primary">
+            <a href="#!">
+                <img class="card-img-top" src="./images/watch-min.jpg" alt="" loading="lazy">
+            </a>
+            <div class="card-body text-center">
+                <h5 class="card-title text-center">Brand C Watch & Bracelet</h5>
+            </div>
+            <div class="text-center">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="mt-2 mb-4">
+                    <span>50 ratings & 27 reviews</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section-->
+    <footer class="bg-light text-center pt-5">
+        <section class="">
+            <form action="">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-auto">
+                        <p class="pt-2 footer-text">Sign Up For Our Newsletter</p>
+                    </div>
+                    <div class="col-md-5 col-12">
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form5Example21" placeholder="email@example.com" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-info mb-4">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <div class="text-center p-3">All Major Credit Cards Accepted!</div>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact Info</h6>
+                        <p><i class="fas fa-home me-3"></i>Los Angeles, CA, 90033</p>
+                        <p><i class="fas fa-envelope me-3"></i>ShinyPinkDiamond@gmail.com</p>
+                        <p><i class="fas fa-phone me-3"></i>(123) 456-7890</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">About Us</h6>
+                        <p><a href="#!" class="text-reset">Our History</a></p>
+                        <p><a href="#!" class="text-reset">Press</a></p>
+                        <p><a href="#!" class="text-reset">Terms & Conditions</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Help & Support</h6>
+                        <p><a href="#!" class="text-reset">Track Your Order</a></p>
+                        <p><a href="#!" class="text-reset">Shipping & Customs</a></p>
+                        <p><a href="#!" class="text-reset">Return Policy</a></p>
+                        <p><a href="#!" class="text-reset">FAQS</a></p>
+                        <p><a href="#!" class="text-reset">Do Not Sell My Personal Information</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <a class="btn text-white btn-floating m-1" id="facebook-color" href="#!" role="button">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn text-white btn-floating m-1" id="twitter-color" href="#!" role="button">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="btn text-white btn-floating m-1" id="instagram-color" href="#!" role="button">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </section>
+        </div>
+        <div class="text-center p-3" id="copyright-box">Copyright &copy; 2019 - 2023 Shiny Pink Diamond All Rights Reserved</div>
+    </footer>
+    <script src="./scripts/slideshow.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
